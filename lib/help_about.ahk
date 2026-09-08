@@ -194,7 +194,7 @@ ConstructAboutDialog(*) {
   __hours := Floor(Mod(__Uptime, 86400000) / 3600000)
   __minutes := Floor(Mod(__Uptime, 3600000) / 60000)
   __seconds := Floor(Mod(__Uptime, 60000) / 1000)
-  UptimeString := __days " Days " __hours " Hrs " __minutes " Mins " __seconds " Secs"
+  UptimeString := __days " D " __hours " h " __minutes " m " __seconds " s"
 
   aboutDlg := Gui()
   aboutDlg.SetFont("q5 s11", guiFont)
